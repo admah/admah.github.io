@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const IndexWrapper = styled.div`
   p {
     color: #181a1b;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 300;
     margin: 0;
   }

@@ -13,8 +13,7 @@ const PageWrapper = styled.div`
 const ContentWrapper = styled.div`
   margin: 0 auto;
   max-width: 960px;
-  padding: 0px 2.2rem 1.45rem;
-  padding-top: 0;
+  padding: 40px 2.2rem 1.45rem;
 `
 
 const Layout = ({ children, data }) => (
