@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
+import twitter from '../img/twitter.svg'
+import github from '../img/github.svg'
 
 const IndexWrapper = styled.div`
   p {
@@ -29,7 +31,11 @@ const SubIntroH2 = styled.h2`
 const IndexContent = styled.div`
   display: grid;
   grid-column-gap: 30px;
-  grid-template-columns: 1fr 320px;
+  grid-template-columns: repeat(auto-fit, minmax(320, 1fr));
+
+  @media (min-width: 720px) {
+    grid-template-columns: minmax(320px, 600px) minmax(280px, 320px);
+  }
 `
 
 const TextContent = styled.div`
@@ -45,12 +51,21 @@ const ResumeContent = styled.div`
     color: #e85a4f;
     font-size: 16px;
     font-weight: 600;
-    margin-left: 1.45rem;
     text-transform: uppercase;
+    margin-left: 0;
+
+    @media (min-width: 720px) {
+      margin-left: 1.45rem;
+    }
   }
 
   ul {
     list-style: none;
+    margin-left: 0;
+
+    @media (min-width: 720px) {
+      margin-left: 1.45rem;
+    }
   }
 
   li {
@@ -65,6 +80,21 @@ const ResumeContent = styled.div`
     font-size: 16px;
     font-weight: 600;
     margin: 4px 0;
+  }
+`
+
+const SocialIcons = styled.ul`
+  list-style: none;
+  margin-left: 0;
+  padding-top: 20px;
+
+  li {
+    display: inline-block;
+    margin: 0 5px 0 0;
+  }
+
+  img {
+    width: 48px;
   }
 `
 
@@ -94,6 +124,18 @@ const IndexPage = () => (
           open-source content management using technologies such as: PHP,
           Wordpress, Drupal, Magento, and others.
         </p>
+        <SocialIcons>
+          <li>
+            <a href="https://twitter.com/admah">
+              <img src={twitter} alt="find me on twitter" />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/admah">
+              <img src={github} alt="find me on github" />
+            </a>
+          </li>
+        </SocialIcons>
       </TextContent>
       <ResumeContent>
         <span>Recent Timeline</span>
