@@ -43,13 +43,13 @@ const IndexContent = styled.div`
   }
 `
 
-const TextContent = styled.div`
+const TextSection = styled.section`
   p {
     margin: 1.2rem 0;
   }
 `
 
-const ResumeContent = styled.div`
+const ResumeSection = styled.section`
   margin-top: 1.2rem;
 
   span {
@@ -105,11 +105,14 @@ const SocialIcons = styled.ul`
 
 const IndexPage = () => (
   <IndexWrapper>
-    <IntroH1>Hello, my name is Adam Murray.</IntroH1>
-    <SubIntroH2>I currently work as a front-end software engineer.</SubIntroH2>
-
+    <header>
+      <IntroH1>Hello, my name is Adam Murray.</IntroH1>
+      <SubIntroH2>
+        I currently work as a front-end software engineer.
+      </SubIntroH2>
+    </header>
     <IndexContent>
-      <TextContent>
+      <TextSection>
         <p>
           I'm passionate about products and developing things that enhance
           people's everyday lives. I'm a life-long learner, and someone that
@@ -141,8 +144,8 @@ const IndexPage = () => (
             </a>
           </li>
         </SocialIcons>
-      </TextContent>
-      <ResumeContent>
+      </TextSection>
+      <ResumeSection>
         <span>Recent Timeline</span>
         <ul>
           <li>
@@ -163,7 +166,7 @@ const IndexPage = () => (
             <p className="company">MasterChannel</p>
           </li>
         </ul>
-      </ResumeContent>
+      </ResumeSection>
     </IndexContent>
   </IndexWrapper>
 )
