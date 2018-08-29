@@ -114,21 +114,22 @@ const IndexPage = () => (
     <IndexContent>
       <TextSection>
         <p>
-          I'm passionate about products and developing things that enhance
-          people's everyday lives. I'm a life-long learner, and someone that
-          loves to dive into new things.
+          I'm an anthropologist turned software developer over a decade ago. I
+          really enjoy working with people to create products that other people
+          love and use. When I'm not typing code furiously, I'm a husband and
+          dad with a lot of hobbies.
         </p>
         <p>
           During my career, I've worked in a variety of roles including:
           development, product management, and business management. I believe
-          this has given me a larger perspective to see how the pieces all fit
-          together and move towards a common goal. In addition to that variety
+          that has given me a larger perspective to see how everything fits
+          together and moves towards a common goal. In addition to that variety
           of experience, I hold a bachelor's degree in anthropology and a
           master's degree in business management.
         </p>
         <p>
           Currently, I'm working as a front-end engineer using technologies
-          like: React, Redux, CSS, and HTML. In the past, I focused in
+          like: React, Redux, CSS, and HTML. In the past, I've focused in
           open-source content management using technologies such as: PHP,
           Wordpress, Drupal, Magento, and others.
         </p>
