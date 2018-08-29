@@ -19,8 +19,13 @@ const IntroH1 = styled.h1`
   font-size: 46px;
   line-height: 68px;
   letter-spacing: 0.05em;
+  margin-bottom: 2rem;
   text-align: left;
-  width: 80%;
+  width: 100%;
+
+  @media (min-width: 720px) {
+    width: 80%;
+  }
 `
 
 const SubIntroH2 = styled.h2`
